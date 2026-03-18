@@ -31,7 +31,7 @@ Sistem tiket helpdesk berbasis web dibangun dengan Laravel 12 dan Filament v4. L
 ### 1. Clone & Install Dependencies
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/cendysaputra/ticketing
 cd ticketing
 composer install
 ```
@@ -80,31 +80,6 @@ php artisan serve
 ```
 
 Atau jika menggunakan Herd, akses langsung di `http://ticketing.test`
-
----
-
-## 🗂️ Struktur Project
-
-```
-app/
-├── Http/
-│   └── Controllers/
-│       └── Auth/
-│           └── OtpController.php   # Logic OTP login
-├── Models/
-│   ├── Otp.php                     # Model tabel OTP
-│   └── User.php
-database/
-├── migrations/
-│   └── xxxx_create_otps_table.php  # Tabel OTP
-resources/
-└── views/
-    └── auth/
-        ├── otp-email.blade.php     # Form input email
-        └── otp-verify.blade.php    # Form input kode OTP
-routes/
-└── web.php                         # Route aplikasi
-```
 
 ---
 
